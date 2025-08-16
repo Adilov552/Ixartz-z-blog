@@ -228,9 +228,91 @@ font-weight: 400;
 font-size: 20px;
 line-height: 1;
 }
+ /* PROJECT START */
+ 
+ .projects {
+    padding-top: 53px;
+    padding-bottom: 91px;
+    display:flex;
+}
+ 
 
+.projects__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-bottom: 82px;
+}
+.project__title {
+font-weight: 700;
+font-size: 48px;
+line-height: 1  ;
+}
+
+.project__title span {
+   background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.project__link {
+gap: 12px;
+font-weight: 700;
+font-size: 20px;
+line-height: 1;
+color: var(--text-color);
+}
+.projects__list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+.projects__item {
+background-color: #1E293B;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0px 4px 10px 0px #0000001a;
+
+
+}
+.projects__img {
+ width: 100%;
+ height: auto;
+ object-fit: cover   ;
+}
+
+.prrjoects__item-info{
+ padding: 22px 12px 71px;
+ text-align: center;
+ color: var(--text-color);
+
+}
+.projects__item-title {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 1;
+ margin-bottom: 8px;
+ color: var(--text-color);
+}
+.project__item-time {
+    display: inline-block;
+ color: #9CA3AF;
+ margin-bottom: 12px;
+}
+.projects__item-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--text-color);
+}
  
- 
+/* PROJECT END */
  
 /* MEDIA START */
 @media screen and (max-width: 1024px) {
@@ -531,6 +613,8 @@ font-size: 12px;
 
  
 }
+
+
 }
 @media screen and (max-width: 600px) {
  .logo img{
@@ -568,6 +652,8 @@ background: linear-gradient(180deg, rgba(164, 5, 5, 0.854) 0%, rgba(249, 52, 22,
 .posts__info-btn3{
 background: linear-gradient(180deg, #7C3AED 0%, #60A5FA 100%);
 }
+
+
 }
 
 
@@ -593,6 +679,9 @@ padding-bottom: 16px;
 .navbar__link {
 font-size: 10px;
 }
+
+
+ 
  
  
 .hero__title {
@@ -684,5 +773,47 @@ background: linear-gradient(180deg, #7C3AED 0%, #60A5FA 100%);
 .posts__info-text {
 font-size: 10px;
 }
+
+ .projects {
+    padding-bottom: 41px;
+    display:flex;
+}
+ 
+
+.projects__info {
+    margin-bottom: 29px;
+}
+.project__title {
+font-size: 20px;
+}
+
+ 
+.project__link {
+gap: 0px;
+font-size: 12px;
+}
+.project__link img{
+ width: 20px;
+ height: 20px;
+}
+
+ 
+
+ 
+.projects__item-title {
+ font-size: 15px;
+}
+.project__item-time {
+ font-size: 12px;
+}
+.projects__item-text {
+    font-size: 12px;
+}
+
+.projects__list {
+grid-template-columns: repeat(1, 1fr);
+gap: 31px;
+}
+
 }
 /* MEDIA END */
